@@ -29,6 +29,11 @@ int main() {
 
     //To do: print all student data to the table
     //hint: use a for loop and a printf statement
+    int i;
+
+    for (i = 0; i < 10; i++) {
+        printf("%-2d    %-17s%.1f\n",(ptr+i)->id, (ptr+i)->name, (ptr+i)->gpa);
+    }
 
     return 0;
 }
